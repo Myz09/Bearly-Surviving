@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwjvh74fpalnl"]
+
+[ext_resource type="Script" path="res://citation.gd" id="1_ulwxe"]
+[ext_resource type="Texture2D" uid="uid://xkiov8ibnk82" path="res://LOADING SCREENS UMBC HACKATHON/citations.webp" id="2_yow0d"]
+[ext_resource type="Texture2D" uid="uid://e321acs84fjn" path="res://LOADING SCREENS UMBC HACKATHON/back but.webp" id="3_ngjfq"]
+
+[node name="Citation" type="Node3D"]
+script = ExtResource("1_ulwxe")
+
+[node name="Citations" type="Sprite2D" parent="."]
+position = Vector2(584, 330)
+scale = Vector2(1.221, 1.22626)
+texture = ExtResource("2_yow0d")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 409.0
+offset_top = 534.0
+offset_right = 747.0
+offset_bottom = 610.0
+text = "Citations"
+
+[node name="BackBut" type="Sprite2D" parent="."]
+position = Vector2(403, 523)
+texture = ExtResource("3_ngjfq")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

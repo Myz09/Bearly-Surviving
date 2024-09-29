@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bccktm5t2m1bq"
+path="res://.godot/imported/Melancholic Cinematic (Royalty Free Music) - A KIND OF HOPE by Scott Buckley.mp3-946b3a5ee86ad9550c1b54ff33837d72.mp3str"
+
+[deps]
+
+source_file="res://LOADING SCREENS UMBC HACKATHON/Melancholic Cinematic (Royalty Free Music) - A KIND OF HOPE by Scott Buckley.mp3"
+dest_files=["res://.godot/imported/Melancholic Cinematic (Royalty Free Music) - A KIND OF HOPE by Scott Buckley.mp3-946b3a5ee86ad9550c1b54ff33837d72.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

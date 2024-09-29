@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb23cwnq2r3bj"]
+
+[ext_resource type="Texture2D" uid="uid://36k6et8ile6n" path="res://Untitled112_20240928224152.webp" id="1_ens7w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4l3lp"]
+albedo_texture = ExtResource("1_ens7w")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w6tyf"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.7695)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0.442724, -0.896455, -0.0190799, 0.232376, 0.0941577, 0.968058, 0, 0, 1.00554)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4l3lp")
+mesh = SubResource("PlaneMesh_w6tyf")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.31611)
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Start"

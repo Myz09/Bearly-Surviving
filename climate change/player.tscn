@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://4a0apfhjogbi"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_u4mtx"]
+[ext_resource type="PackedScene" uid="uid://488de5ge2nsl" path="res://no/polarbear (1).glb" id="2_afnde"]
+[ext_resource type="PackedScene" uid="uid://x0dpfpy0qtxp" path="res://polarbear (2).glb" id="3_u1617"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4b7os"]
+size = Vector3(6.94176, 3.36641, 2.55194)
+
+[node name="Player" type="RigidBody3D"]
+lock_rotation = true
+script = ExtResource("1_u4mtx")
+
+[node name="polarbear (1)" parent="." instance=ExtResource("2_afnde")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.120984, -5.96046e-08, 0.680382)
+visible = false
+
+[node name="TwistPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="PitchPivot" type="Node3D" parent="TwistPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="TwistPivot/PitchPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="polarbear (2)" parent="." instance=ExtResource("3_u1617")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.103863, -0.0228391, 0.626642)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.499996, -0.00191986, 0, 0.00191986, 0.499996, -0.245988, 0.141973, 0.580533)
+shape = SubResource("BoxShape3D_4b7os")

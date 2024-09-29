@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6blfu5dqfrxw"]
+
+[ext_resource type="PackedScene" uid="uid://36uy7dc7j062" path="res://polarbear.fbx" id="1_5g4w6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vhc0x"]
+size = Vector3(3.83148, 2.01163, 1.3989)
+
+[node name="player?" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.165802, 0.214371, 0.105011)
+shape = SubResource("BoxShape3D_vhc0x")
+
+[node name="polarbear" parent="." instance=ExtResource("1_5g4w6")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.0345375, 0)

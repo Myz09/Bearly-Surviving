@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://chd8i8nsjn5n7"]
+
+[ext_resource type="AudioStream" uid="uid://bccktm5t2m1bq" path="res://LOADING SCREENS UMBC HACKATHON/Melancholic Cinematic (Royalty Free Music) - A KIND OF HOPE by Scott Buckley.mp3" id="1_dcgii"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_dcgii")
+autoplay = true

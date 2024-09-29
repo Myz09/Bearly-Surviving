@@ -15,11 +15,3 @@ transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0.465295, 0, 0.767525)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.549919, 0, 0.00945483, 0, 0.55, 0, -0.00945483, 0, 0.549919, 0.39184, 2.14657, 0.809346)
 shape = SubResource("CylinderShape3D_xnxfi")
-
-[node name="Label3D" type="Label3D" parent="."]
-transform = Transform3D(0.997907, 0.0646717, 0, -0.00575456, 0.0887949, 0.996034, 0.0644151, -0.993949, 0.0889812, 0.42807, 2.70992, 2.17617)
-modulate = Color(0, 0, 0, 1)
-outline_modulate = Color(1, 1, 1, 1)
-text = "Melting ice due to climate change has led to more conflicts between humans and polar bears, as hungry bears venture closer to find food during the summer months."
-font_size = 38
-autowrap_mode = 2

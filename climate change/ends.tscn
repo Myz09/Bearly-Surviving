@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://8xjskomirdn7"]
+
+[ext_resource type="Script" path="res://end.gd" id="1_4bwd7"]
+[ext_resource type="Texture2D" uid="uid://ccldmq2beijde" path="res://LOADING SCREENS UMBC HACKATHON/LOADING SCREENS UMBC HACKATHON (1)/end'.webp" id="2_1kbkw"]
+[ext_resource type="Texture2D" uid="uid://djunm2q05vak7" path="res://LOADING SCREENS UMBC HACKATHON/LOADING SCREENS UMBC HACKATHON (1)/bkbut.webp" id="3_k1lun"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_4bwd7")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 159.0
+offset_top = 516.0
+offset_right = 492.0
+offset_bottom = 599.0
+text = "Back"
+
+[node name="End\'" type="Sprite2D" parent="."]
+position = Vector2(556.75, 318)
+scale = Vector2(1.18757, 1.20074)
+texture = ExtResource("2_1kbkw")
+
+[node name="Bkbut" type="Sprite2D" parent="."]
+position = Vector2(145, 510)
+texture = ExtResource("3_k1lun")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
