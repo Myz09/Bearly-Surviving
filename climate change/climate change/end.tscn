@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2yg8g1lqufbh"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2cw6n"]
+size = Vector2(100, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0i36d"]
+transparency = 1
+
+[node name="End" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -0.000296756, 1, 0, -1, -0.000296756, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.3714e-08, -1, 0, 1, -4.3714e-08, -0.620022, -1.31872, 0.565832)
+layers = 3
+mesh = SubResource("PlaneMesh_2cw6n")
+surface_material_override/0 = SubResource("StandardMaterial3D_0i36d")

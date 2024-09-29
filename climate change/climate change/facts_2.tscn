@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvpii24udbuab"]
+
+[ext_resource type="Script" path="res://facts_2.gd" id="1_ypvh0"]
+[ext_resource type="Texture2D" uid="uid://qhlxphxhiexq" path="res://LOADING SCREENS UMBC HACKATHON/LOADING SCREENS UMBC HACKATHON (1)/3.png" id="2_ak0x3"]
+
+[node name="facts_2" type="Node3D"]
+script = ExtResource("1_ypvh0")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1155.0
+offset_bottom = 648.0
+text = "asd
+"
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(578, 321)
+scale = Vector2(0.60625, 0.6)
+texture = ExtResource("2_ak0x3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

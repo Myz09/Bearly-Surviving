@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr7f3ahdwj0w3"]
+
+[ext_resource type="Script" path="res://stater.gd" id="1_e8w33"]
+[ext_resource type="Texture2D" uid="uid://dgoydw0883f3b" path="res://into/13.png" id="2_4i1r6"]
+
+[node name="Stat" type="Node3D"]
+script = ExtResource("1_e8w33")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1148.0
+offset_bottom = 647.0
+
+[node name="13" type="Sprite2D" parent="."]
+position = Vector2(574, 323.5)
+scale = Vector2(0.603125, 0.60463)
+texture = ExtResource("2_4i1r6")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

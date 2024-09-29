@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsgggywebxvv4"]
+
+[ext_resource type="Script" path="res://next.gd" id="1_kj5po"]
+[ext_resource type="Texture2D" uid="uid://guh20t62yyft" path="res://LOADING SCREENS UMBC HACKATHON/LOADING SCREENS UMBC HACKATHON (1)/2.png" id="2_uwfvt"]
+
+[node name="Facts1" type="Node3D"]
+script = ExtResource("1_kj5po")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1153.0
+offset_bottom = 649.0
+text = "SOS
+"
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(579, 321)
+scale = Vector2(0.605208, 0.607407)
+texture = ExtResource("2_uwfvt")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
