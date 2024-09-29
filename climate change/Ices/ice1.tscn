@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxtbjvly083yp"]
+[gd_scene load_steps=3 format=3 uid="uid://chm0lhntuyxe3"]
 
-[ext_resource type="PackedScene" uid="uid://4mw88tqb1ybo" path="res://ICEBERG2.glb" id="1_f60cq"]
+[ext_resource type="PackedScene" uid="uid://4mw88tqb1ybo" path="res://ICEBERG2.glb" id="1_2ehem"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_xnxfi"]
 height = 1.50456
@@ -9,7 +9,7 @@ radius = 4.0
 [node name="ICE" type="RigidBody3D"]
 transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 0, 0, 0)
 
-[node name="ICEBERG2" parent="." instance=ExtResource("1_f60cq")]
+[node name="ICEBERG2" parent="." instance=ExtResource("1_2ehem")]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0.465295, 0, 0.767525)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

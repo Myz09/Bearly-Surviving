@@ -1,6 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8rfscj8shtgj"]
+[gd_scene load_steps=13 format=3 uid="uid://b8rfscj8shtgj"]
 
 [ext_resource type="Texture2D" uid="uid://36k6et8ile6n" path="res://Untitled112_20240928224152.webp" id="1_06aoh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hrs5y"]
+sky_top_color = Color(0.356863, 0.760784, 0.905882, 1)
+sky_horizon_color = Color(0.617647, 0.752941, 0.806863, 1)
+ground_bottom_color = Color(0.113725, 0.25098, 0.321569, 1)
+ground_horizon_color = Color(0.617647, 0.752941, 0.806863, 1)
+
+[sub_resource type="Sky" id="Sky_g4dox"]
+sky_material = SubResource("ProceduralSkyMaterial_hrs5y")
+
+[sub_resource type="Environment" id="Environment_vlpd4"]
+background_mode = 2
+sky = SubResource("Sky_g4dox")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tok4n"]
 albedo_texture = ExtResource("1_06aoh")
@@ -16,7 +31,7 @@ transparency = 1
 albedo_color = Color(0, 0.478431, 1, 0.498039)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7bco3"]
-size = Vector3(100, 10, 50)
+size = Vector3(150, 10, 50)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eejyp"]
 albedo_texture = ExtResource("1_06aoh")
@@ -28,6 +43,9 @@ size = Vector2(100, 100)
 data = PackedVector3Array(50, 0, 50, -50, 0, 50, 50, 0, -50, -50, 0, 50, -50, 0, -50, 50, 0, -50)
 
 [node name="Bkgd" type="MeshInstance3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vlpd4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 64.2127, -1.55684, -43.0222)
