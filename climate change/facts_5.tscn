@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://1n3405mtappk"]
+[gd_scene load_steps=4 format=3 uid="uid://1n3405mtappk"]
 
 [ext_resource type="Script" path="res://facts_2.gd" id="1_0upng"]
+[ext_resource type="Texture2D" uid="uid://b6u1rqrgehc7w" path="res://LOADING SCREENS UMBC HACKATHON/LOADING SCREENS UMBC HACKATHON (1)/6.png" id="2_prdvt"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tnf1u"]
-load_path = "res://.godot/imported/6.png-ebc5472b630f55a0986dae8974ff3c2b.ctex"
 
 [node name="facts_2" type="Node3D"]
 script = ExtResource("1_0upng")
@@ -16,7 +16,12 @@ text = "asd
 
 [node name="6" type="Sprite2D" parent="."]
 position = Vector2(584.5, 325.5)
-scale = Vector2(0.614062, 0.612037)
+scale = Vector2(529.5, 313.5)
 texture = SubResource("CompressedTexture2D_tnf1u")
+
+[node name="7" type="Sprite2D" parent="."]
+position = Vector2(579.5, 323)
+scale = Vector2(0.603646, 0.605556)
+texture = ExtResource("2_prdvt")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
