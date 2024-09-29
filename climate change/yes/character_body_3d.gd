@@ -41,5 +41,4 @@ func respawn():
 	velocity.y = 0
 	velocity.x =0
 	velocity.z = 0
-
 	get_tree().change_scene_to_file(list[i%5])
